@@ -1,0 +1,227 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #1e3a8a; /* Dark blue for text */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Box Model: Padding for body */
+}
+
+/* Header Styling */
+header.section-container {
+    background-color: #e5e7eb; /* Light gray background */
+    padding: 20px; /* Box Model: Padding */
+    margin-bottom: 20px; /* Box Model: Margin */
+    border: 2px solid #1e3a8a; /* Box Model: Border */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #1e3a8a; /* Dark blue */
+    margin-bottom: 10px; /* Box Model: Margin */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #374151; /* Darker gray for contrast */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #1e3a8a; /* Dark blue */
+    padding: 15px; /* Box Model: Padding */
+    margin-bottom: 20px; /* Box Model: Margin */
+    border: 1px solid #3b82f6; /* Box Model: Border */
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar li {
+    margin: 0 15px; /* Box Model: Margin */
+}
+
+.nav-bar a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px; /* Box Model: Padding */
+}
+
+.nav-bar a:hover {
+    background-color: #3b82f6; /* Lighter blue on hover */
+    border-radius: 5px; /* Box Model: Border radius */
+}
+
+/* Section Containers */
+.section-container {
+    margin: 20px 0; /* Box Model: Margin */
+    padding: 15px; /* Box Model: Padding */
+}
+
+/* Card-like Sections */
+.card {
+    background-color: #f3f4f6; /* Light gray background */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    padding: 20px; /* Box Model: Padding */
+    margin-bottom: 20px; /* Box Model: Margin */
+}
+
+/* Headings */
+h2 {
+    font-size: 1.8em;
+    color: #1e3a8a;
+    margin-bottom: 15px; /* Box Model: Margin */
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #374151;
+    margin: 10px 0; /* Box Model: Margin */
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px; /* Box Model: Margin */
+}
+
+/* Lists */
+ul {
+    margin-left: 20px; /* Box Model: Margin */
+    padding-left: 20px; /* Box Model: Padding */
+}
+
+ul li {
+    margin-bottom: 8px; /* Box Model: Margin */
+}
+
+/* Table Styling */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #1e3a8a; /* Box Model: Border */
+    margin-bottom: 20px; /* Box Model: Margin */
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px; /* Box Model: Padding */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #3b82f6; /* Blue header */
+    color: #ffffff;
+}
+
+.schedule-table caption {
+    padding: 10px; /* Box Model: Padding */
+    font-style: italic;
+}
+
+/* Media Styling */
+.media-card {
+    margin: 15px 0; /* Box Model: Margin */
+    padding: 10px; /* Box Model: Padding */
+    background-color: #e5e7eb; /* Light gray */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Optional: adds space between images */
+    flex-wrap: wrap; /* Optional: allows wrapping on small screens */
+    flex-direction: row;
+}
+
+.media-card img,
+.media-card video {
+    width: 400px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.media-card figcaption {
+    font-size: 0.9em;
+    color: #374151;
+    padding: 5px 0; /* Box Model: Padding */
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto; /* Box Model: Margin for centering */
+}
+
+.form-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    padding: 15px; /* Box Model: Padding */
+    margin-bottom: 15px; /* Box Model: Margin */
+}
+
+form p {
+    margin-bottom: 15px; /* Box Model: Margin */
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Box Model: Margin */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px; /* Box Model: Padding */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    font-size: 1em;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px; /* Box Model: Margin */
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+.button {
+    padding: 10px 20px; /* Box Model: Padding */
+    margin-right: 10px; /* Box Model: Margin */
+    border: 1px solid #1e3a8a; /* Box Model: Border */
+    background-color: #3b82f6; /* Blue */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1e3a8a; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer.section-container {
+    text-align: center;
+    padding: 15px; /* Box Model: Padding */
+    background-color: #e5e7eb; /* Light gray */
+    border-top: 2px solid #1e3a8a; /* Box Model: Border */
+    margin-top: 20px; /* Box Model: Margin */
+}

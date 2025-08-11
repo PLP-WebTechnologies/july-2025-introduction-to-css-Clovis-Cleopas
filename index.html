@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Summit 2025 Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="section-container">
+        <h1>Tech Summit 2025</h1>
+        <p>Join us for the premier technology conference of the year!</p>
+    </header>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-container card" id="home">
+            <h2>Conference Overview</h2>
+            <p>Explore cutting-edge innovations at Tech Summit 2025. Below is an overview of our tracks, schedule, and registration form.</p>
+
+            <!-- Lists: Conference Tracks -->
+            <h3>Conference Tracks</h3>
+            <ul>
+                <li>Artificial Intelligence
+                    <ul>
+                        <li>Machine Learning Advancements</li>
+                        <li>Ethics in AI</li>
+                    </ul>
+                </li>
+                <li>Cloud Computing
+                    <ul>
+                        <li>Serverless Architectures</li>
+                        <li>Cloud Security Best Practices</li>
+                    </ul>
+                </li>
+                <li>Web Development
+                    <ul>
+                        <li>Progressive Web Apps</li>
+                        <li>Modern JavaScript Frameworks</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Table: Conference Schedule -->
+            <h3 id="schedule">Schedule</h3>
+            <table class="schedule-table">
+                <caption>Tech Summit 2025 Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-10-01</td>
+                        <td>09:00 AM</td>
+                        <td>Keynote: Future of Tech</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-01</td>
+                        <td>11:00 AM</td>
+                        <td>AI Ethics Panel</td>
+                        <td>Room A</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-02</td>
+                        <td>10:00 AM</td>
+                        <td>Cloud Security Workshop</td>
+                        <td>Room B</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Media: Image and Video -->
+            <h3>Conference Highlights</h3>
+            <figure class="media-card">
+                <img src="venue.jpg" alt="Tech Summit 2025 venue with attendees networking">
+                <img src="venue2.jpg" alt="Tech Summit 2025 venue with attendees networking">
+                <figcaption>Tech Summit 2025 Venue</figcaption>
+            </figure>
+            <figure class="media-card">
+                <video controls width="400px">
+                  <source src="video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls width="400px">
+                   <source src="video2.mp4" type="video/mp4">
+                   Your browser does not support the video tag.               
+                 </video>
+                <figcaption>Watch highlights from last year's Tech Summit</figcaption>
+            </figure>
+        </section>
+
+        <!-- Form: Registration -->
+        <section class="section-container card" id="register">
+            <h2>Register for Tech Summit 2025</h2>
+            <form action="/submit" method="post" novalidate>
+                <!-- Personal Information -->
+                <fieldset class="form-card">
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required minlength="2" placeholder="John Doe" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com" autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" autocomplete="tel">
+                    </p>
+                    <p>
+                        <label for="company">Company (Optional):</label>
+                        <input type="text" id="company" name="company" placeholder="Your company name" autocomplete="organization">
+                    </p>
+                </fieldset>
+
+                <!-- Conference Preferences -->
+                <fieldset class="form-card">
+                    <legend>Conference Preferences</legend>
+                    <p>
+                        <label for="track">Preferred Track:</label>
+                        <select id="track" name="track" required>
+                            <option value="">Select a track</option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="cloud">Cloud Computing</option>
+                            <option value="web">Web Development</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="attend-date">Attendance Date:</label>
+                        <input type="date" id="attend-date" name="attend-date" min="2025-10-01" max="2025-10-02" required>
+                    </p>
+                    <p>
+                        <label>Attendance Type:</label><br>
+                        <input type="radio" id="in-person" name="attendance" value="in-person" required>
+                        <label for="in-person">In-Person</label>
+                        <input type="radio" id="virtual" name="attendance" value="virtual">
+                        <label for="virtual">Virtual</label>
+                    </p>
+                    <p>
+                        <label>Optional Add-ons:</label><br>
+                        <input type="checkbox" id="workshop" name="addons" value="workshop">
+                        <label for="workshop">Workshop Access</label>
+                        <input type="checkbox" id="networking" name="addons" value="networking">
+                        <label for="networking">Networking Event</label>
+                    </p>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset class="form-card">
+                    <legend>Additional Information</legend>
+                    <p>
+                        <label for="experience">Years of Tech Experience:</label>
+                        <input type="number" id="experience" name="experience" min="0" max="50" placeholder="5" readonly value="5">
+                    </p>
+                    <p>
+                        <label for="comments">Comments or Questions:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special requirements or questions?"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Register Now" class="button">
+                    <input type="reset" value="Reset Form" class="button">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="section-container">
+        <p>&copy; 2025 Tech Summit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
